@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pearl Khatri's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   /* Skills Section */
+.skillsSection {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.skillsSection h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.skill {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 210px;
+  margin-right: 30px;
+}
+
+.skill h4 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.skill-description {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-description p {
+  color: #666;
+  font-size: 16px;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+}
+
+.chart canvas {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 24px;
+  color: hsl(242, 76%, 37%);
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center; 
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  justify-content: center; 
+}
+
+.owl-carousel .owl-nav {
+  display: none;
+}
+
+.owl-carousel .owl-dots {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.owl-carousel .owl-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.owl-carousel .owl-dot.active {
+  background-color: #333;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+  <nav id="navigation" class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">Pearl Khatri </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About Me <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me -->
+<div id="about" class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img class="aboutImage" src="Pearl Khatri.jpg" alt="Pearl Khatri" />
+      </div>
+
+      <div class="col-md-7">
+        <h2 class="aboutMe">About Me</h2>
+
+        <p>
+          Hey there! I'm Pearl Khatri, and my academic journey at Banasthali Vidyapith, where I pursued a B.Tech in IT,
+          has been nothing short of exciting. Achieving a commendable CGPA that reflects my dedication and
+          commitment to academic excellence. Furthermore, my outstanding performance in the 12th and 10th board
+          examinations showcases my strong educational foundation and determination to succeed academically.
+          <br><br>
+          I'm passionate about learning and always eager to explore new technologies. 
+          <br><br>
+          Proactively seeking research opportunities, I publish a research paper on Liver Tumor Segmentation at an international conference, providing valuable international experience. [https://ieeexplore.ieee.org/abstract/document/10303778]
+        </p>
+
+        <div class="links">
+          <a href="https://github.com/pearlkhatri" class="link"><i class="fab fa-github"></i> Github</a>
+          <a href="https://www.linkedin.com/in/khatripearl/" class="link"><i
+              class="fab fa-linkedin"></i> Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Skills -->
+<div id="skills" class="skillsSection section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2><b>MY SKILLS</b></h2>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="skill">
+          <span class="chart" data-percent="85">
+            <span class="percent">85%</span>
+            <canvas height="152" width="152"></canvas>
+          </span>
+          <h4>HTML</h4>
+          <div class="skill-description">
+            <p>Proficient in creating structured and semantically meaningful web pages using HTML5.</p>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="chart" data-percent="60">
+            <span class="percent">60%</span>
+            <canvas height="152" width="152"></canvas>
+          </span>
+          <h4>CSS</h4>
+          <div class="skill-description">
+            <p>Skilled in styling and layout design using CSS3, including responsive web design techniques.</p>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="chart" data-percent="80">
+            <span class="percent">80%</span>
+            <canvas height="152" width="152"></canvas>
+          </span>
+          <h4>Javascript</h4>
+          <div class="skill-description">
+            <p>Proficient in client-side scripting and dynamic web content development using JavaScript.</p>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span class="chart" data-percent="45">
+            <span class="percent">45%</span>
+            <canvas height="152" width="152"></canvas>
+          </span>
+          <h4>C++</h4>
+          <div class="skill-description">
+            <p>Familiar with object-oriented programming principles and algorithms in C++.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Contact -->
+<div id="contact" class="contactSection section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <p class="subHeading">Contact</p>
+        <h2>Send me a message!</h2>
+        <form id="contactForm" action="send_email.php" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Copyright -->
+
+  <div class="copyrightSection">
+    <div class="col-md-12 text-center">
+      <p>
+        copyright &copy; 2024 some rights reserved | Pearl Khatri
+      </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
